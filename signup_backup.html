@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- # Header -->
+    <div class="h-20 border-b-2 border-gray-200 flex flex-row justify-around items-center">
+        <a href="index.html">
+            <img class="h-16 aspect-auto" src="./logo.avif" alt="logo" />
+        </a>
+
+        <a href="index.html">
+            <p class="font-libre">FriendshipOnWheels</p>
+        </a>
+
+        <div>
+            <a href="signin.html">
+                <button class="p-3 rounded-md border-2 border-black">Sign in</button>
+            </a>
+
+            <a href="signup.html">
+                <button class="p-3 rounded-md border-2 border-black bg-black text-white">Sign up</button>
+            </a>
+        </div>
+    </div>
+
+    <!-- body -->
+    <div class="mx-auto max-w-screen-sm w-full flex flex-col gap-2 justify-center pt-10">
+        <p>Username</p>
+        <input class=" bg-slate-100 rounded-sm shadow-inner p-3 h-full w-full" placeholder="Username" />
+
+        <p>Email</p>
+        <input class=" bg-slate-100 rounded-sm shadow-inner p-3 h-full w-full" placeholder="Email" />
+
+        <p>Password</p>
+        <input class=" bg-slate-100 rounded-sm shadow-inner p-3 h-full w-full" placeholder="Password" type="password" />
+
+        <div class="flex flex-row gap-1 items-center mt-3">
+            <input type="checkbox" placeholder="hi" />
+            <p>Accept the <span class="text-blue-900 cursor-pointer">terms of service</span></p>
+        </div>
+        <div class="flex flex-row gap-1 items-center">
+            <input type="checkbox" />
+            <p>Accept the <span class="text-blue-900 cursor-pointer">privacy policy</span></p>
+        </div>
+
+        <button class="rounded-md border-gray-200 border-[2px] shadow-sm w-[60%] py-3 self-center mt-6">Sign Up</button>
+
+        <!-- <div class="self-center py-3">
+        <GoogleLogin onSuccess={signUpWithGoogle} onError={err=> console.error(err)} text="signup_with" useOneTap
+            size="medium" />
+    </div> -->
+
+        <p class=" self-center text-blue-900 cursor-pointer">Sign In</p>
+        <p class=" self-center text-blue-900 cursor-pointer">Forgot password</p>
+        <p class=" self-center text-blue-900 cursor-pointer">Home</p>
+    </div>
+</body>
+
+</html>
