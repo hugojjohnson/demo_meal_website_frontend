@@ -4,28 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/tailwindcss.com"></script>
 </head>
 
 <body>
     <!-- # Header -->
     <div class="h-20 border-b-2 border-gray-200 flex flex-row justify-around items-center">
-        <a href="index.html">
-            <img class="h-16 aspect-auto" src="./media/logo.jpg" alt="logo" />
-        </a>
-
-        <a href="index.html">
-            <p class="font-libre">FriendshipOnWheels</p>
-        </a>
-
+        <a href="/index.html"><img class="h-16 aspect-auto" src="../media/logo.jpg" alt="logo" /></a>
+        <a href="/index.html"><p class="font-libre">FriendshipOnWheels</p></a>
         <div>
-            <a href="signin.html">
-                <button class="p-3 rounded-md border-2 border-black">Sign in</button>
-            </a>
-
-            <a href="signup.html">
-                <button class="p-3 rounded-md border-2 border-black bg-black text-white">Sign up</button>
-            </a>
+            <a href="/signin.html"><button class="p-3 rounded-md border-2 border-black">Sign in</button></a>
+            <a href="/signup.html"><button class="p-3 rounded-md border-2 border-black bg-black text-white">Sign up</button></a>
         </div>
     </div>
 
@@ -38,25 +27,25 @@
             <div class="flex flex-row w-full gap-5">
                 <button class="h-32 w-full rounded-md shadow-md">Change availability</button>
                 <button class=" h-32 w-full rounded-md shadow-md">Change location</button>
-                <button class="h-32 w-full rounded-md shadow-md">Find a requestor</button>
+                <a class="w-full" href="./volunteer_page.html"><button class="h-32 w-full rounded-md shadow-md">Volunteer</button></a>
             </div>
             <div class="flex flex-row justify-between">
                 <div class="flex flex-col gap-5 w-full">
                     <h3 class="text-xl mt-10">Your requestors 🙋</h3>
-                    <div class="flex flex-row gap-3 items-center bg-slate-100 p-3 rounded-md max-w-[75%]">
-                        <img class="w-16 h-16 rounded-full object-cover" src="./media/adam.jpg" alt="volunteer" />
+                    <a class="max-w-[75%]" href="./meet_requestor_adam.html"><div class="flex flex-row gap-3 items-center bg-slate-100 p-3 rounded-md">
+                        <img class="w-16 h-16 rounded-full object-cover" src="../media/adam.jpg" alt="volunteer" />
                         <p>Adam
                         <p class="bg-orange-200 px-2 rounded-md">Hearing Impaired</p>
                         </p>
-                    </div>
+                    </div></a>
                     <div class="flex flex-row gap-3 items-center bg-slate-100 p-3 rounded-md max-w-[75%]">
-                        <img class="w-16 h-16 rounded-full object-cover" src="./media/john.jpg" alt="volunteer" />
+                        <img class="w-16 h-16 rounded-full object-cover" src="../media/john.jpg" alt="volunteer" />
                         <p>John
                         <p class="bg-green-200 px-2 rounded-md">Elderly</p>
                         </p>
                     </div>
                     <div class="flex flex-row gap-3 items-center bg-slate-100 p-3 rounded-md max-w-[75%]">
-                        <img class="w-16 h-16 rounded-full object-cover" src="./media/shelly.jpg" alt="volunteer" />
+                        <img class="w-16 h-16 rounded-full object-cover" src="../media/shelly.jpg" alt="volunteer" />
                         <p>Shelly
                         <p class="bg-orange-200 px-2 rounded-md">Hearing Impaired</p>
                         <p class="bg-blue-200 px-2 rounded-md">Wheelchair</p>
@@ -65,10 +54,10 @@
                 </div>
                 <div class="flex flex-col gap-5">
                     <h3 class="text-xl mt-10">Help and Report</h3>
-                    <button class="h-20 p-3 rounded-md bg-slate-100 w-64">Help</button>
+                    <a href="/help.html"><button class="h-20 p-3 rounded-md bg-slate-100 w-64">Help</button></a>
                     <div class="flex flex-row gap-3">
-                        <button class="h-20 p-3 rounded-md bg-slate-100 w-[50%]">Feedback</button>
-                        <button class="h-20 p-3 rounded-md bg-slate-100 w-[50%]">Report</button>
+                        <a class="w-[50%] h-20 rounded-md bg-slate-100" href="/feedback.html"><button class="h-20 w-full p-3">Feedback</button></a>
+                        <a class="w-[50%] h-20 rounded-md bg-slate-100" href="/report.html"><button class="h-20 w-full p-3">Report</button></a>
                     </div>
                 </div>
             </div>
@@ -78,7 +67,7 @@
             <h1 class="text-xl">Your upcoming deliveries 🚗</h1>
             <!-- Meal box -->
             <div class="flex flex-row w-full items-center justify-between gap-5 p-3 rounded-md bg-slate-100">
-                <img class="w-20 h-20 object-cover rounded-md" src="./media/chicken_soup.webp" alt="chicken soup" />
+                <img class="w-20 h-20 object-cover rounded-md" src="../media/chicken_soup.webp" alt="chicken soup" />
                 <div class="flex flex-col mx-auto">
                     <p class="font-lg">Chicken Soup with Croutons</p>
                     <p class="font-bold">Thursday 3pm</p>
@@ -86,7 +75,7 @@
                 </div>
             </div>
             <div class="flex flex-row w-full items-center justify-between gap-5 p-3 rounded-md bg-slate-100">
-                <img class="w-20 h-20 object-cover rounded-md" src="./media/paella.webp" alt="chicken soup" />
+                <img class="w-20 h-20 object-cover rounded-md" src="../media/paella.webp" alt="chicken soup" />
                 <div class="flex flex-col mx-auto">
                     <p class="font-lg">Spanish seafood paella with saffron</p>
                     <p class="font-bold">Friday 2pm</p>
@@ -94,7 +83,7 @@
                 </div>
             </div>
             <div class="flex flex-row w-full items-center justify-between gap-5 p-3 rounded-md bg-slate-100">
-                <img class="w-20 h-20 object-cover rounded-md" src="./media/fried-rice.jpg" alt="chicken soup" />
+                <img class="w-20 h-20 object-cover rounded-md" src="../media/fried-rice.jpg" alt="chicken soup" />
                 <div class="flex flex-col mx-auto">
                     <p class="font-lg">Egg fried rice</p>
                     <p class="font-bold">Sunday 6pm</p>
@@ -102,7 +91,7 @@
                 </div>
             </div>
             <div class="flex flex-row w-full items-center justify-between gap-5 p-3 rounded-md bg-slate-100">
-                <img class="w-20 h-20 object-cover rounded-md" src="./media/thai-red-curry.jpg" alt="chicken soup" />
+                <img class="w-20 h-20 object-cover rounded-md" src="../media/thai-red-curry.jpg" alt="chicken soup" />
                 <div class="flex flex-col mx-auto">
                     <p class="font-lg">Thai red curry</p>
                     <p class="font-bold">Sunday 6pm</p>
@@ -110,7 +99,7 @@
                 </div>
             </div>
             <div class="flex flex-row w-full items-center justify-between gap-5 p-3 rounded-md bg-slate-100">
-                <img class="w-20 h-20 object-cover rounded-md" src="./media/lasagna.webp" alt="chicken soup" />
+                <img class="w-20 h-20 object-cover rounded-md" src="../media/lasagna.webp" alt="chicken soup" />
                 <div class="flex flex-col mx-auto">
                     <p class="font-lg">Homemade lasagna bolognese</p>
                     <p class="font-bold">Monday 10am</p>
