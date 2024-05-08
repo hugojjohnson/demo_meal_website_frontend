@@ -20,13 +20,13 @@
 
     <h1 class="text-2xl pt-10 ml-32">Welcome back, Adam!</h1>
     <!-- body -->
-    <div class="mx-auto w-full flex flex-row justify-between pt-5">
+    <div class="mx-auto w-full min-h-screen flex flex-row justify-between pt-5">
         <!-- Main dashboard -->
         <div class="flex flex-col ml-32 w-[67%]">
             <!-- Copy this! https://codepen.io/ecemgo/pen/YzBZjjb -->
             <div class="flex flex-row w-full gap-5">
                 <a href="./change_availability.html" class="w-full"><button class="h-32 w-full rounded-md shadow-md">Change availability</button></a>
-                <button class=" h-32 w-full rounded-md shadow-md">Change location</button>
+                <a href="./change_location.html" class="w-full"><button class=" h-32 w-full rounded-md shadow-md">Change location</button></a>
                 <a class="w-full" href="./volunteer_page.html"><button class="h-32 w-full rounded-md shadow-md">Volunteer</button></a>
             </div>
             <div class="flex flex-row justify-between">
@@ -108,8 +108,28 @@
             </div>
 
         </div>
+    </div>
 
-
+    <!-- # Footer -->
+    <div class="h-36 flex flex-row justify-around mb-32 mt-20">
+        <!-- <div class="w-[50%]">FriendshipOnWheels</div> -->
+        <div class="flex flex-col gap-5">
+            <h3 class="font-semibold">Requestors</h3>
+            <a href="/requestor/signup_requestor.html">Request a meal</a>
+            <a href="/requestor/signin_requestor.html">Sign in</a>
+        </div>
+        <div class="flex flex-col gap-5">
+            <h3 class="font-semibold">Volunteers</h3>
+            <a href="/volunteer/signup_volunteer.html">Become a volunteer</a>
+            <a href="/volunteer/signin_volunteer.html">Sign in</a>
+        </div>
+        <div class="flex flex-col gap-5">
+            <h3 class="font-semibold">MealsOnWheels</h3>
+            <a href="/help.html">Help</a>
+            <a href="/contact_us.html">Contact</a>
+            <a href="/privacy_policy.html">Privacy policy</a>
+            <a href="/FAQ.html">FAQ</a>
+        </div>
     </div>
 </body>
 
