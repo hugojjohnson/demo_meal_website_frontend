@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../../tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- # Header -->
+    <div class="h-20 border-b-2 border-gray-200 flex flex-row justify-around items-center">
+        <a href="../../index.html"><img class="h-16 aspect-auto" src="../../media/logo.jpg" alt="logo" /></a>
+        <a href="../../index.html">
+            <p class="font-libre">FriendshipOnWheels</p>
+        </a>
+        <div class="flex flex-row gap-2 items-center">
+            <div class="group flex flex-row items-center">
+                <p>Adam</p>
+                <img src="../../media/default_profile.jpg" class="w-20 h-20 p-3 rounded-full" alt="profile picture" />
+                <div
+                    class="w-52 p-3 rounded-md bg-white border-2 border-gray-200 mt-0 translate-y-[7.6rem] fixed invisible group-hover:visible flex flex-col">
+                    <a class="hover:text-blue-800 text-lg cursor-pointer" href="../copies/profile.html">Profile</a>
+                    <a class="hover:text-blue-800 text-lg cursor-pointer" href="../copies/donation.html">Donate</a>
+                    <a class="hover:text-blue-800 text-lg cursor-pointer" href="../copies/FAQ.html">FAQ</a>
+                    <a class="hover:text-blue-800 text-lg cursor-pointer" href="../copies/feedback.html">Feedback</a>
+                    <a class="hover:text-blue-800 text-lg cursor-pointer" href="../copies/report.html">Report</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- body -->
+    <div class="flex flex-col items-center mx-auto">
+
+        <div class="w-full">
+            <div class="max-w-screen-sm mx-auto mt-20 flex flex-col gap-5">
+                <div>
+                    <h3 class="text-3xl mb-2">Profile</h3>
+                </div>
+
+                <div class="border-[1px] border-gray-200"></div>
+
+                <h3 class="text-2xl">Personal details</h3>
+                <div class="flex flex-row gap-5 w-full mt-3">
+                    <div class="w-full">
+                        <p>First Name</p>
+                        <input value="John" class="bg-transparent border-2 border-gray-200 rounded-md p-2 w-full" />
+                    </div>
+                    <div class="w-full">
+                        <p>Last Name</p>
+                        <input value="Adams" class="bg-transparent border-2 border-gray-200 rounded-md p-2 w-full" />
+                    </div>
+                </div>
+                <div class="w-full">
+                    <p>Email Address</p>
+                    <input value="johnadams593@gmail.com" class="bg-transparent border-2 border-gray-200 rounded-md p-2 w-full" />
+                </div>
+                <div>
+                    <p>Phone Number</p>
+                    <input value="+61 395 384 223" type="tel" class="bg-transparent border-2 border-gray-200 rounded-md p-2 w-full" />
+                </div>
+
+                <div class="border-[1px] border-gray-200"></div>
+
+                <h3 class="text-2xl">Security</h3>
+                <div class="w-full">
+                    <p>Current password</p>
+                    <input type="password" class="bg-transparent border-2 border-gray-200 rounded-md p-2 w-full" />
+                </div>
+                <div class="w-full">
+                    <p>New password</p>
+                    <input type="password" class="bg-transparent border-2 border-gray-200 rounded-md p-2 w-full" />
+                </div>
+                <div class="w-full">
+                    <p>Re-enter new password</p>
+                    <input type="password" class="bg-transparent border-2 border-gray-200 rounded-md p-2 w-full" />
+                </div>
+
+                <div class="w-full">
+                    <p>Two-factor authentication</p>
+                    <div class="flex flex-row items-center gap-2 border-2 border-gray-200 rounded-md p-3 w-64">
+                        <img class="w-7 h-7" src="../../media/google.jpg" alt="Google logo" />
+                        <p>Google</p>
+                        <p class="text-blue-700 ml-10">Disconnect</p>
+                    </div>
+                </div>
+
+                <button class="rounded-md border-gray-200 border-[2px] shadow-sm py-3 px-7 self-center text-center mt-12">Update profile</button>
+
+                <button class="rounded-md bg-red-100 border-gray-200 border-[2px] shadow-sm py-3 px-7 self-center text-center mt-12">Delete your profile</button>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- # Footer -->
+    <div class="h-36 flex flex-row justify-around mb-32 mt-20">
+        <!-- <div class="w-[50%]">FriendshipOnWheels</div> -->
+        <div class="flex flex-col gap-5">
+            <h3 class="font-semibold">Requestors</h3>
+            <a href="../../requestor/signup_requestor.html">Request a meal</a>
+            <a href="../../requestor/signin_requestor.html">Sign in</a>
+        </div>
+        <div class="flex flex-col gap-5">
+            <h3 class="font-semibold">Volunteers</h3>
+            <a href="../../volunteer/signup_volunteer.html">Become a volunteer</a>
+            <a href="../../volunteer/signin_volunteer.html">Sign in</a>
+        </div>
+        <div class="flex flex-col gap-5">
+            <h3 class="font-semibold">MealsOnWheels</h3>
+            <a href="../../help.html">Help</a>
+            <a href="../../contact_us.html">Contact</a>
+            <a href="../../privacy_policy.html">Privacy policy</a>
+            <a href="../../FAQ.html">FAQ</a>
+        </div>
+    </div>
+</body>
+
+</html>
