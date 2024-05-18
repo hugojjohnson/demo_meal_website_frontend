@@ -63,6 +63,38 @@
 
                 <div class="border-[1px] border-gray-200"></div>
 
+                <h3 class="text-2xl">Certificate</h3>
+                <p>Click <a class="text-blue-700" href="../../media/certificate.pdf" target="_blank">here</a> to download a certificate of volunteering.</p>
+
+                <div class="border-[1px] border-gray-200"></div>
+
+                <h3 class="text-2xl">Language</h3>
+                <p>Still in development</p>
+                <div class="w-full flex flex-row gap-6 justify-center">
+                    <div class="flex flex-col items-center text-lg border-gray-200 border-2 rounded-md p-2 w-32 hover:cursor-pointer language bg-gray-100">
+                        <p>🇬🇧</p>
+                        <p>English</p>
+                    </div>
+                    <div class="flex flex-col items-center text-lg border-gray-200 border-2 rounded-md p-2 w-32 hover:cursor-pointer language">
+                        <p>🇪🇸</p>
+                        <p>Español</p>
+                    </div>
+                    <div class="flex flex-col items-center text-lg border-gray-200 border-2 rounded-md p-2 w-32 hover:cursor-pointer language">
+                        <p>🇫🇷</p>
+                        <p>Français</p>
+                    </div>
+                    <div class="flex flex-col items-center text-lg border-gray-200 border-2 rounded-md p-2 w-32 hover:cursor-pointer language">
+                        <p>🇨🇳</p>
+                        <p>中国</p>
+                    </div>
+                    <div class="flex flex-col items-center text-lg border-gray-200 border-2 rounded-md p-2 w-32 hover:cursor-pointer language">
+                        <p>🇮🇳</p>
+                        <p>हिंदी</p>
+                    </div>
+                </div>
+
+                <div class="border-[1px] border-gray-200"></div>
+
                 <h3 class="text-2xl">Security</h3>
                 <div class="w-full">
                     <p>Current password</p>
@@ -116,5 +148,17 @@
         </div>
     </div>
 </body>
+
+<script>
+    let button_list = document.querySelectorAll(".language");
+    button_list.forEach(element => {
+        element.addEventListener("click", function () {
+            button_list.forEach(remove_background => {
+                remove_background.classList.remove("bg-gray-100");
+            });
+            this.classList.add("bg-gray-100");
+        });
+    });
+</script>
 
 </html>
